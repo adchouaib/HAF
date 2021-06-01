@@ -1,0 +1,87 @@
+mixin cards(numbers)
+    -const cardStyle = {"width": "12rem","border-color":"black"}
+    -const colStyle = {"display":"flex","justify-content":"center","align-items":"center"}
+    -const titleStyle = {"font-size":"25px"}
+    -const textStyle = {}
+    each n in numbers 
+        .col(style=colStyle)
+            .card(style=cardStyle)
+                .card-body 
+                    .card-title
+                        p(style=titleStyle) #{n.number}  
+                    .card-text(style=textStyle)
+                        p #{n.title} 
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Alegreya")
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+        link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous")
+        link(href="https://fonts.googleapis.com/css?family=Barlow:500,600,700%7CHeebo:400,500,500i,900&amp;display=fallback" rel="stylesheet")
+        link(href="https://use.fontawesome.com/releases/v5.3.1/css/svg-with-js.css" rel="stylesheet")
+        link(rel="stylesheet", href="index.css")
+        title Document
+    body 
+        header
+            nav(class="navbar navbar-expand-lg navbar-light " id="navigation")
+                .brand
+                    a.navbar-brand HAF
+                    button.navbar-toggler(type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation")
+                        span.navbar-toggler-icon
+                .nav 
+                    div(class="collapse navbar-collapse " id="navbarNav")
+                        ul.navbar-nav
+                            li.nav-item 
+                                a(class="nav-link active" aria-current="page" href="#") Home 
+                            li.nav-item 
+                                a(class="nav-link" href="#") Projects
+                            li.nav-item 
+                                a(class="nav-link" href="#") Market
+                            li.nav-item 
+                                a(class="nav-link" href="#") ContactUs
+                            li.nav-item 
+                                a(class="nav-link" href="#") AboutUs
+                            li.nav-item
+                                button(class="btn" type="button") Login
+        .container-lg     
+            section.intro
+                .textInto 
+                    .contentIntro
+                        h1.title A big Title 
+                        p. 
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Curabitur vel tortor purus. Donec in tincidunt dui.
+                            Sed congue ut purus vel molestie.
+                            Phasellus eu malesuada lacus. Integer 
+                            lacinia at lectus sit amet fermentum. Curabitur sit amet 
+                            laoreet ligula, at aliquet sem. Nulla facilisi. 
+                            Nunc ac condimentum enim.
+                        .DonateIntro  
+                            button(class="btn btn-primary" type="button") Donate Now 
+                            a(href="#") How it works 
+                .imgIntro
+                    object(data="./assets/Landscape.svg", type="image/svg+xml") 
+        .container(id="numbers")
+            section.numbers
+                h1 Numbers
+                - const numbersData = [{"number":20,"title":"projects"},{"number":50,"title":"donors"},{"number":40,"title":"dons"},{"number":10,"title":"entreprise"}]
+                .cards
+                    .row
+                        +cards(numbersData)
+
+        section.todayProject
+            .projectImage 
+                img(src="", alt="projectimg")
+            .projectText
+                h2 Todays Project
+                h1 A big title 
+                p. 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Curabitur vel tortor purus. Donec in tincidunt dui.
+                    Sed congue ut purus vel molestie
+                input.slider(type="range", name="",min="1" max="100",value="50")
+                button Donate Now 
+                a More Detail
+        script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous")
