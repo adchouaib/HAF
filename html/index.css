@@ -78,10 +78,43 @@ object{
     display: flex;
    justify-content: center;
    align-items: center;
+   margin-bottom: 30;
 }
 .numbers{
     text-align: center;
-    
+}
+.todayProject{
+    display: flex;
+    justify-content: space-between;
+    margin: 30 0 30 0;
+}
+
+#todayProject{
+    display: flex;
+    margin-top: 30px;
+    /*height: 80vh;*/
+    align-items: center;
+}
+#todayProject h2{
+    text-align: center;
+}
+.textInto2{
+    display: flex;
+    justify-content: center;
+}
+.projectReactiveElements{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.donators{
+    display: flex;
+    justify-content: space-between;
+}
+.donator,.don{
+    font-size: 13px;
+    color : #1c2438;
 }
 
 @media screen and (max-width: 991px) {
@@ -95,12 +128,12 @@ object{
         display: flex;
         justify-content: space-between;
     }
-    #navigation li{
+    #navigation li,.projectImage,.textIntro2{
         display: flex;
         justify-content: center;
     }
     .intro{
-        height: 130vh;
+        /*height: 130vh;*/
     }
     .imgIntro{
         margin-top: 20px;
@@ -109,13 +142,18 @@ object{
         width: 650px;
         border-radius: 10px;
     }
-    p{
-        text-align: center;
+    .projectImage{
+        width: auto;
     }
-    .title{
+    p,.project-title,.title{
         text-align: center;
     }
     .card{
         margin-top: 20px;
+    }
+    .todayProject{
+        display: block;
+        justify-content: space-between;
+        margin: 30 0 30 0;
     }
 }
