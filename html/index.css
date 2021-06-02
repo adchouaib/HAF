@@ -120,6 +120,9 @@ object{
     font-size: 10px;
     color : #1c2438;
 }
+.space{
+    margin-top:20;
+}
 
 @media screen and (max-width: 991px) {
     #navigation,.intro{
