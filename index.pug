@@ -15,7 +15,7 @@ mixin cards(numbers)
 mixin cardProjet(projets)
     -const cardStyle = {"width": "12rem","border-color":"black"}
     -const colStyle = {"display":"flex","justify-content":"center","align-items":"center"}
-    -const titleStyle = {"font-size":"7px"}
+    -const titleStyle = {"font-size":"10px"}
     -const textStyle = {"font-size":"10px","display":"flex","justify-content":"center","align-items":"center"}
     each n in projets 
         .col(style=colStyle)
@@ -123,4 +123,34 @@ html(lang="en")
                                     +cardProjet(ProjectData)
                             .space
                             a(href="#") Discover other Projects  >>
+                .container(id="numbers")
+                        section.numbers
+                            h2 Our Achievements
+                            .spaces
+                                .box
+                                    span("style"="--i:1;")
+                                        -const ach1 = {"src":"./assets/projectoftheMonth.png", "alt":"projectimg" , "class":"img-fluid","width":200}
+                                        img&attributes(ach1)
+                                    span("style"="--i:2;")
+                                        -const ach2 = {"src":"./assets/siteVisit.png", "alt":"projectimg" , "class":"img-fluid","width":200}
+                                        img&attributes(ach2)
+                                    span("style"="--i:3;")
+                                        -const ach3 = {"src":"./assets/topRanked.png", "alt":"projectimg" , "class":"img-fluid","width":200}
+                                        img&attributes(ach3)
+                                    span("style"="--i:4;")
+                                        -const ach4 = {"src":"./assets/topRanked.png", "alt":"projectimg" , "class":"img-fluid","width":200}
+                                        img&attributes(ach4)
+                                    span("style"="--i:5;")
+                                        -const ach5 = {"src":"./assets/effectivee.png", "alt":"projectimg" , "class":"img-fluid","width":200}
+                                        img&attributes(ach5)
+                                    span("style"="--i:6;")
+                                        -const ach6 = {"src":"./assets/vetted_large.png", "alt":"projectimg" , "class":"img-fluid","width":200}
+                                        img&attributes(ach6)
+                                    span("style"="--i:7;")
+                                        -const ach7 = {"src":"./assets/badge.png", "alt":"projectimg" , "class":"img-fluid","width":200}
+                                        img&attributes(ach7)
+                                    span("style"="--i:8;")
+                                        -const ach8 = {"src":"./assets/badge-consumer-HAf.png", "alt":"projectimg" , "class":"img-fluid","width":200}
+                                        img&attributes(ach8)
+                
         script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous")
