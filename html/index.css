@@ -113,7 +113,11 @@ object{
     justify-content: space-between;
 }
 .donator,.don{
-    font-size: 13px;
+    font-size: 10px;
+    color : #1c2438;
+}
+.donators,.dons{
+    font-size: 10px;
     color : #1c2438;
 }
 
