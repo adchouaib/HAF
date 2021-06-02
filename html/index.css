@@ -20,7 +20,7 @@ a{
     font-style: italic;
 }
 p{
-    font-size: 20px;
+    font-size: 15px;
 }
 #navigation{
     justify-content: space-between;
@@ -43,19 +43,20 @@ p{
     text-decoration: underline;
     transition: 0.1s;
 }
-.intro{
+.intro,.carbon,.goal{
     display: flex;
     justify-content: space-between;
     margin: 30 0 30 0;
     align-items: center;
     /*height: 80vh;*/
 }
-.title{
+.title,.project-title{
     color:#26525f;
     font-weight: 500px;
-    font-size: 50px;
+    font-size: 35px;
 }
-.textInto,.imgIntro,.DonateIntro{
+
+.textInto,.imgIntro,.DonateIntro,.textcarbon,.imgcarbon,.imggoal,.textgoal{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -104,6 +105,11 @@ object{
     display: flex;
     justify-content: center;
 }
+.projectImage{
+    display: flex;
+    justify-content: center;  
+    align-items: center; 
+}
 .projectReactiveElements{
     display: flex;
     justify-content: center;
@@ -138,6 +144,13 @@ object{
     height:100;
     transform-origin:center ;
   
+}
+.contentIntro,.projectText{
+    padding:30px;
+    text-align: center;
+}
+.text-reset{
+    text-decoration: none;
 }
 
 @keyframes animate {
@@ -212,7 +225,7 @@ object{
 }
 
 @media screen and (max-width: 991px) {
-    #navigation,.intro{
+    #navigation,.intro,.carbon,.goal{
         display: block;
     }
     #navigation{
@@ -229,7 +242,7 @@ object{
     .intro{
         /*height: 130vh;*/
     }
-    .imgIntro{
+    .imgIntro,.imgcarbon,.imggoal{
         margin-top: 20px;
     }
     object{
@@ -245,6 +258,7 @@ object{
     .card{
         margin-top: 20px;
     }
+    
     .todayProject{
         display: block;
         justify-content: space-between;
