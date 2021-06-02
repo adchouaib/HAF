@@ -1,0 +1,238 @@
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css?family=Barlow:500,600,700%7CHeebo:400,500,500i,900&amp;amp;display=fallback" rel="stylesheet"/>
+    <link href="https://use.fontawesome.com/releases/v5.3.1/css/svg-with-js.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="home.css"/>
+    <title>Document</title>
+  </head>
+  <body> 
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light " id="navigation">
+        <div class="brand"><a class="navbar-brand">HAF</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        </div>
+        <div class="nav"> 
+          <div class="collapse navbar-collapse " id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item"> <a class="nav-link" aria-current="page" href="./index.html">Home </a></li>
+              <li class="nav-item"> <a class="nav-link active" href="#">Projects</a></li>
+              <li class="nav-item"> <a class="nav-link" href="#">Market</a></li>
+              <li class="nav-item"> <a class="nav-link" href="#">ContactUs</a></li>
+              <li class="nav-item">
+                <button class="btn" type="button">Login</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="container-fluid">  
+      <section class="intro" id="search">
+        <div class="input-group">
+          <div class="div1">
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle spacetop" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Categorie<span class="caret"></span></button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Desc</a></li>
+                <li><a class="dropdown-item" href="#">Asc</a></li>
+              </ul>
+              <button class="btn btn-secondary dropdown-toggle spacetop" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Date<span class="caret"></span></button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Desc</a></li>
+                <li><a class="dropdown-item" href="#">Asc</a></li>
+              </ul>
+              <button class="btn btn-secondary dropdown-toggle spacetop" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Donateurs<span class="caret"></span></button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Desc</a></li>
+                <li><a class="dropdown-item" href="#">Asc</a></li>
+              </ul>
+              <button class="btn btn-secondary dropdown-toggle spacetop" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Dons<span class="caret"></span></button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Desc</a></li>
+                <li><a class="dropdown-item" href="#">Asc</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="div2">
+          <input type="hidden" name="search_param" value="all" id="search_param"/>
+          <input class="form-control resize" type="text" name="x" placeholder="Search"/>
+          <button class="btn btn-default resize" type="button"><span class="fa fa-search " aria-hidden="true" style="max-height:40px"></span></button>
+        </div>
+      </section>
+    </div>
+    <div class="container" id="numbers">
+      <section class="numbers">
+        <h2>Other Projects</h2>
+        <div class="cards">
+          <div class="row">
+            <div class="col" style="display:flex;justify-content:center;align-items:center;">
+              <div class="card" style="width:12rem;border-color:black;">
+                <div class="card-body"> <img class="img-fluid" src="./assets/project.png" alt="projectimg"/>
+                  <div class="card-text" style="font-size:10px;display:flex;justify-content:center;align-items:center;">
+                    <p>A big title      </p>
+                  </div>
+                  <div class="card-title">
+                    <p style="font-size:10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Curabitur vel tortor purus. Donec in tincidunt dui. Sed congue ut purus vel molestie</p>
+                    <div class="donators"> 
+                      <p class="donators">500 <br> donator</p>
+                      <p class="dons">  300 <br>dons</p>
+                    </div>
+                  </div>
+                  <button class="btn btn-primary" type="button" style="font-size:10px;">Donate</button>
+                </div>
+              </div>
+            </div>
+            <div class="col" style="display:flex;justify-content:center;align-items:center;">
+              <div class="card" style="width:12rem;border-color:black;">
+                <div class="card-body"> <img class="img-fluid" src="./assets/project.png" alt="projectimg"/>
+                  <div class="card-text" style="font-size:10px;display:flex;justify-content:center;align-items:center;">
+                    <p>A big title      </p>
+                  </div>
+                  <div class="card-title">
+                    <p style="font-size:10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Curabitur vel tortor purus. Donec in tincidunt dui. Sed congue ut purus vel molestie</p>
+                    <div class="donators"> 
+                      <p class="donators">500 <br> donator</p>
+                      <p class="dons">  300 <br>dons</p>
+                    </div>
+                  </div>
+                  <button class="btn btn-primary" type="button" style="font-size:10px;">Donate</button>
+                </div>
+              </div>
+            </div>
+            <div class="col" style="display:flex;justify-content:center;align-items:center;">
+              <div class="card" style="width:12rem;border-color:black;">
+                <div class="card-body"> <img class="img-fluid" src="./assets/project.png" alt="projectimg"/>
+                  <div class="card-text" style="font-size:10px;display:flex;justify-content:center;align-items:center;">
+                    <p>A big title      </p>
+                  </div>
+                  <div class="card-title">
+                    <p style="font-size:10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Curabitur vel tortor purus. Donec in tincidunt dui. Sed congue ut purus vel molestie</p>
+                    <div class="donators"> 
+                      <p class="donators">600 <br> donator</p>
+                      <p class="dons">  400 <br>dons</p>
+                    </div>
+                  </div>
+                  <button class="btn btn-primary" type="button" style="font-size:10px;">Donate</button>
+                </div>
+              </div>
+            </div>
+            <div class="col" style="display:flex;justify-content:center;align-items:center;">
+              <div class="card" style="width:12rem;border-color:black;">
+                <div class="card-body"> <img class="img-fluid" src="./assets/project.png" alt="projectimg"/>
+                  <div class="card-text" style="font-size:10px;display:flex;justify-content:center;align-items:center;">
+                    <p>A big title      </p>
+                  </div>
+                  <div class="card-title">
+                    <p style="font-size:10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Curabitur vel tortor purus. Donec in tincidunt dui. Sed congue ut purus vel molestie</p>
+                    <div class="donators"> 
+                      <p class="donators">500 <br> donator</p>
+                      <p class="dons">  300 <br>dons</p>
+                    </div>
+                  </div>
+                  <button class="btn btn-primary" type="button" style="font-size:10px;">Donate</button>
+                </div>
+              </div>
+            </div>
+            <div class="col" style="display:flex;justify-content:center;align-items:center;">
+              <div class="card" style="width:12rem;border-color:black;">
+                <div class="card-body"> <img class="img-fluid" src="./assets/project.png" alt="projectimg"/>
+                  <div class="card-text" style="font-size:10px;display:flex;justify-content:center;align-items:center;">
+                    <p>A big title      </p>
+                  </div>
+                  <div class="card-title">
+                    <p style="font-size:10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Curabitur vel tortor purus. Donec in tincidunt dui. Sed congue ut purus vel molestie</p>
+                    <div class="donators"> 
+                      <p class="donators">500 <br> donator</p>
+                      <p class="dons">  300 <br>dons</p>
+                    </div>
+                  </div>
+                  <button class="btn btn-primary" type="button" style="font-size:10px;">Donate</button>
+                </div>
+              </div>
+            </div>
+            <div class="col" style="display:flex;justify-content:center;align-items:center;">
+              <div class="card" style="width:12rem;border-color:black;">
+                <div class="card-body"> <img class="img-fluid" src="./assets/project.png" alt="projectimg"/>
+                  <div class="card-text" style="font-size:10px;display:flex;justify-content:center;align-items:center;">
+                    <p>A big title      </p>
+                  </div>
+                  <div class="card-title">
+                    <p style="font-size:10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Curabitur vel tortor purus. Donec in tincidunt dui. Sed congue ut purus vel molestie</p>
+                    <div class="donators"> 
+                      <p class="donators">600 <br> donator</p>
+                      <p class="dons">  400 <br>dons</p>
+                    </div>
+                  </div>
+                  <button class="btn btn-primary" type="button" style="font-size:10px;">Donate</button>
+                </div>
+              </div>
+            </div>
+            <div class="col" style="display:flex;justify-content:center;align-items:center;">
+              <div class="card" style="width:12rem;border-color:black;">
+                <div class="card-body"> <img class="img-fluid" src="./assets/project.png" alt="projectimg"/>
+                  <div class="card-text" style="font-size:10px;display:flex;justify-content:center;align-items:center;">
+                    <p>A big title      </p>
+                  </div>
+                  <div class="card-title">
+                    <p style="font-size:10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Curabitur vel tortor purus. Donec in tincidunt dui. Sed congue ut purus vel molestie</p>
+                    <div class="donators"> 
+                      <p class="donators">500 <br> donator</p>
+                      <p class="dons">  300 <br>dons</p>
+                    </div>
+                  </div>
+                  <button class="btn btn-primary" type="button" style="font-size:10px;">Donate</button>
+                </div>
+              </div>
+            </div>
+            <div class="col" style="display:flex;justify-content:center;align-items:center;">
+              <div class="card" style="width:12rem;border-color:black;">
+                <div class="card-body"> <img class="img-fluid" src="./assets/project.png" alt="projectimg"/>
+                  <div class="card-text" style="font-size:10px;display:flex;justify-content:center;align-items:center;">
+                    <p>A big title      </p>
+                  </div>
+                  <div class="card-title">
+                    <p style="font-size:10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Curabitur vel tortor purus. Donec in tincidunt dui. Sed congue ut purus vel molestie</p>
+                    <div class="donators"> 
+                      <p class="donators">500 <br> donator</p>
+                      <p class="dons">  300 <br>dons</p>
+                    </div>
+                  </div>
+                  <button class="btn btn-primary" type="button" style="font-size:10px;">Donate</button>
+                </div>
+              </div>
+            </div>
+            <div class="col" style="display:flex;justify-content:center;align-items:center;">
+              <div class="card" style="width:12rem;border-color:black;">
+                <div class="card-body"> <img class="img-fluid" src="./assets/project.png" alt="projectimg"/>
+                  <div class="card-text" style="font-size:10px;display:flex;justify-content:center;align-items:center;">
+                    <p>A big title      </p>
+                  </div>
+                  <div class="card-title">
+                    <p style="font-size:10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Curabitur vel tortor purus. Donec in tincidunt dui. Sed congue ut purus vel molestie</p>
+                    <div class="donators"> 
+                      <p class="donators">600 <br> donator</p>
+                      <p class="dons">  400 <br>dons</p>
+                    </div>
+                  </div>
+                  <button class="btn btn-primary" type="button" style="font-size:10px;">Donate</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="space"></div>
+      </section>
+    </div>
+  </body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>

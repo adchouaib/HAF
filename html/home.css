@@ -1,0 +1,156 @@
+a,h1,h2,p{
+    font-family: 'Barlow, sans-serif';
+    color: black;
+}
+.btn{
+    background-color: #1c2438;
+    color: white;
+    border-color: #1c2438;
+}
+.btn:hover{
+    background-color: #7398ab;
+    color:white;
+    border-color: #7398ab;
+}
+.navbar-dark .navbar-brand {
+    color: #1c2438;
+}
+a{
+    font-weight: 700;
+    font-style: italic;
+}
+p{
+    font-size: 20px;
+}
+#navigation{
+    justify-content: space-between;
+    padding: 20 100 20 100;
+}
+.navbar{
+    background-color:#e9e8e4;
+   
+}
+.navbar-dark .navbar-nav .nav-link {
+    color:rgb(36 41 46 / 92%);
+}
+.navbar-dark .navbar-nav .nav-link.active{
+    color: black;
+    font-size: 20px;
+}
+.navbar-dark .nav-link:hover{
+    color: black;
+    font-size: 20px;
+    text-decoration: underline;
+    transition: 0.1s;
+}
+.intro{
+   
+    margin: 30 70 30 70;
+   
+    /*height: 80vh;*/
+}
+.div2{
+    display: flex;
+    
+
+}
+.textInto {
+    width: 100%;
+}
+
+.spaceleft{
+    margin-right:20;
+}
+.spacetop{
+    margin-top:20;
+}
+
+
+.resize{
+    max-height:40px;
+    margin-top: 20;
+}
+
+.spacebetween{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20 ;
+}
+#search{
+    display: flex;
+    justify-content: space-between;
+}
+.numbers{
+    text-align: center;
+}
+#numbers{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 30;
+  
+}
+.space{
+    margin-top:20;
+}
+
+.donators,.dons{
+    font-size: 10px;
+    color : #1c2438;
+}
+.donators{
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    margin-top:20;
+}
+
+
+
+@media screen and (max-width: 411px) {
+    .spacetop{
+        margin-top:8;
+    }
+    
+
+}
+@media screen and (max-width: 516px) {
+    
+    #search{
+        display: block;
+        justify-content: space-between;
+    }
+    
+    
+    
+
+}
+
+
+
+
+
+@media screen and (max-width: 991px) {
+    #navigation,.intro{
+        display: block;
+    }
+    #navigation{
+        padding: 20 10 20 10;
+    }
+    .brand{
+        display: flex;
+        justify-content: space-between;
+    }
+    #navigation li,.projectImage,.textIntro2{
+        display: flex;
+        justify-content: center;
+    }
+  
+    p,.project-title,.title{
+        text-align: center;
+    }
+    
+    
+   
+}
