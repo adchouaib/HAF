@@ -221,7 +221,7 @@ object{
         transform-style: preserve-3d;
         transform: rotateY(calc(var(--i)* 45deg)) translateZ(150px);
     }
-
+ 
 }
 
 @media screen and (max-width: 991px) {
@@ -264,6 +264,7 @@ object{
         justify-content: space-between;
         margin: 30 0 30 0;
     }
+    
     
    
 }

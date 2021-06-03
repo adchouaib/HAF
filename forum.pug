@@ -1,0 +1,57 @@
+mixin question(data)
+    for n in data 
+        .row 
+            .question
+                span 
+                    strong Q: 
+                soan #{n.ques}
+            .response
+                span 
+                    strong R: 
+                span #{n.resp}
+
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Alegreya")
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+        link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous")
+        link(href="https://fonts.googleapis.com/css?family=Barlow:500,600,700%7CHeebo:400,500,500i,900&amp;display=fallback" rel="stylesheet")
+        link(href="https://use.fontawesome.com/releases/v5.3.1/css/svg-with-js.css" rel="stylesheet")
+        link(rel="stylesheet", href="index.css")
+        link(rel="stylesheet", href="forum.css")
+        title HAF forum
+    body 
+        section.upSection 
+            h4 Forum
+        section.navigation  
+                div(class="navbar navbar-expand navbar-light bg-light")
+                        div(id="navbarNav")
+                            ul(class="navbar-nav")
+                                li(class="nav-item")
+                                    a(class="nav-link active" href="#") Q&A 
+                                li(class="nav-item")
+                                    a(class="nav-link" href="#") Contact Us 
+        section.search 
+                .div2
+                    input(type="hidden" name="search_param" value="all" id="search_param")        
+                    input(type="text" class="form-control resize" name="x" placeholder="Search" )
+                    button(class="btn btn-default resize" type="button")
+                        span(class="fa fa-search " aria-hidden="true" style="max-height:40px")
+        section.q-a     
+            -const data = [{"ques":"Lorem ipsum dolor sit amet, consectetur adipiscing elit","resp":"Curabitur vel tortor purus. Donec in tincidunt dui. Sed congue ut purus vel molestie. Phasellus eu malesuada lacus"},{"ques":"Lorem ipsum dolor sit amet, consectetur adipiscing elit","resp":"Curabitur vel tortor purus. Donec in tincidunt dui. Sed congue ut purus vel molestie. Phasellus eu malesuada lacus"},{"ques":"Lorem ipsum dolor sit amet, consectetur adipiscing elit","resp":"Curabitur vel tortor purus. Donec in tincidunt dui. Sed congue ut purus vel molestie. Phasellus eu malesuada lacus"}]
+            +question(data)
+
+        section.pagination 
+            nav 
+                ul.pagination
+                    li(class="page-item disabled") 
+                        a(class="page-link" href="#" tabindex="-1") Previous 
+                    li(class="page-item")
+                        input(type="number" id="number" class="page-link" placeholder="1")
+                    li(class="page-item")    
+                        a(class="page-link" href="#") Next    
+        include footer
+        script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous")
