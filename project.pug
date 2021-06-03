@@ -7,7 +7,7 @@ mixin cardProjet(projets)
         .col(style=colStyle)
             .card(style=cardStyle)
                 .card-body 
-                    -const myattributprojet={"src":"./assets/project.png", "alt":"projectimg" , "class":"img-fluid"}
+                    -const myattributprojet={"src":"./assets/project.png", "alt":"projectimg" , "class":"img-fluid","onclick":"window.location.href='projectDetail.html'"}
                         img&attributes(myattributprojet)
                     .card-text(style=textStyle)
                          p #{n.title}      
@@ -16,7 +16,7 @@ mixin cardProjet(projets)
                         .donators 
                             p.donators #{n.donator} <br> donator
                             p.dons   #{n.dons} <br>dons
-                    button(class="btn btn-primary" type="button",style={"font-size": "10px"}) Donate
+                    button(class="btn btn-primary" type="button",style={"font-size": "10px"} onclick="window.location.href='donatoToProject.html'") Donate
 
 html(lang="en")
     head
