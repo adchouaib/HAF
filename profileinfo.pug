@@ -1,0 +1,96 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Alegreya")
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+        link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous")
+        link(href="https://fonts.googleapis.com/css?family=Barlow:500,600,700%7CHeebo:400,500,500i,900&amp;display=fallback" rel="stylesheet")
+        link(href="https://use.fontawesome.com/releases/v5.3.1/css/svg-with-js.css" rel="stylesheet")
+        script(src="profile.js")
+        link(rel="stylesheet", href="profile.css")
+        title Document
+    body 
+            header
+                nav(class="navbar navbar-expand-lg navbar-light " id="navigation")
+                    .brand
+                        a.navbar-brand HAF
+                        button.navbar-toggler(type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation")
+                            span.navbar-toggler-icon
+                    .nav 
+                        div(class="collapse navbar-collapse " id="navbarNav")
+                            ul.navbar-nav
+                                li.nav-item 
+                                    a(class="nav-link" aria-current="page" href="./index.html") Home 
+                                li.nav-item 
+                                    a(class="nav-link active" href="#") Projects
+                                li.nav-item 
+                                    a(class="nav-link" href="#") Market
+                                li.nav-item 
+                                    a(class="nav-link" href="#") ContactUs
+                                li.nav-item(class="leftt")
+                                    span(class="user-avatar pull-left" )
+                                        img(src="https://lut.im/7JCpw12uUT/mY0Mb78SvSIcjvkf.png" class="img-responsive img-circle" title="John Doe" alt="John Doe" width="30px" height="30px")
+                                li.nav-item(class="dropdown" class="left")
+                                    a(href="#" class="dropdown-toggle" data-toggle="dropdown")
+                                        span(class="user-name") Yami Sukehiro
+                                        span("class"="caret")
+                                        ul(class="dropdown-menu" aria-labelledby="dropdownMenuLink")
+                                            li
+                                                a( href="#") Desc
+                                            li
+                                                a(href="#") Asc
+                .container-lg
+                    .section.intro
+                        .imagepop
+                            a(href="#" aria-label="Change Profile Picture")
+                                .profile-pic(style="background-image: url('https://lut.im/7JCpw12uUT/mY0Mb78SvSIcjvkf.png')")
+                                    .divspan
+
+                                       p 
+                                            i(class="fa fa-camera" ) 
+                    
+                    .textIntro
+                      h4.project-title Yami Sukehiro
+                      .EditProfile
+                        button(class="btn btn-primary" type="button") Edit the profile
+                            <i class="fa fa-cog" aria-hidden="true" style="margin-left:10px"></i>
+                .space 
+                  
+                    nav(class="navbar navbar-expand-lg navbar-light bg-light")
+                        div(id="navbarSupportedContent")
+                            ul(class="navbar-nav mr-auto")
+                                li(class="nav-item active")
+                                    a(class="nav-link active" href="#") Info General
+                                    span(class="sr-only") (current)
+                                li(class="nav-item")
+                                    a(class="nav-link" href="#") My donations
+                                li(class="nav-item")
+                                    a(class="nav-link" href="#") Updates
+            .spaces(id="navbarSupportedContent")
+                h6  FirstName :
+                a(class="sizeinfo") Yami 
+                h6  LastName :
+                a(class="sizeinfo") Sukehiro
+                h6  Email :
+                a(class="sizeinfo") yami@gmail.com
+                h6  Phone :
+                a(class="sizeinfo") 06271827282
+                h6  Adress :
+                a(class="sizeinfo") Japan
+    .space
+        .space
+            include footer
+                           
+                            
+
+
+
+
+
+script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous")
+script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js")
+script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js")
+
+
