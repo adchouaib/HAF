@@ -224,6 +224,15 @@ p,.project-title,.title{
     margin: 10 0 10 0;
 
 }
+.search{
+    display: flex;
+    justify-content:flex-end;
+    padding: 0 30 0 0;
+}
+.div2{
+    width: 200px;
+    display: flex;
+}
 
 .see{
     display: flex;
