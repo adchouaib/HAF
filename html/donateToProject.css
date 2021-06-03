@@ -1,0 +1,37 @@
+
+h5{
+    text-align: center;
+}
+
+.DonateTo{
+    margin: 30 0 30 0;
+}
+.payements{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.payements h6{
+    margin: 20px;
+}
+
+.bar{
+    height: 6px;
+    background-color: grey;
+}
+.bar-active{
+    height: 6px;
+    background-color: black;
+}
+
+.paragraph,.payButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 327px) {
+    .payements h6{
+        margin: 4px;
+    }
+}
