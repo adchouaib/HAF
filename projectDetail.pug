@@ -1,0 +1,72 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Alegreya")
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+        link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous")
+        link(href="https://fonts.googleapis.com/css?family=Barlow:500,600,700%7CHeebo:400,500,500i,900&amp;display=fallback" rel="stylesheet")
+        link(href="https://use.fontawesome.com/releases/v5.3.1/css/svg-with-js.css" rel="stylesheet")
+        link(rel="stylesheet", href="projectDetail.css")
+        title Document
+    body 
+        include header
+        .container-lg 
+            .main 
+                .projectCategorie
+                    h5 Youth   
+                    hr(width="2" size="30") 
+                    h5 16/10/2020
+                .projectName 
+                    h2 Youth empowerment
+                .project 
+                    .projectImage
+                        -const Myattributes = {"src":"./assets/project.png", "alt":"projectimg" , "class":"img-fluid"}
+                        img&attributes(Myattributes) 
+                    .projectDonation
+                        h5 2 500 000 DH raised of 5 000 000 DH goal
+                        .slider
+                                .range  
+                                    input(type="range", name="customRange", class="form-range" disabled)
+                                .infos 
+                                    p.donation 5000 donations
+                                    p.price 2 500 000 DH to go
+                        .priceInput 
+                            div(class="input-group mb-3")
+                                input(type="text" class="form-control" aria-label="Amount (to the nearest dirham)" placeholder="Price ...")
+                                span(class="input-group-text") DH
+                                button(type="button" class="btn btn-primary") Donate Now
+                .navigation 
+                    div(class="navbar navbar-expand-sm navbar-light bg-light")
+                        div(id="navbarNav")
+                            ul(class="navbar-nav")
+                                li(class="nav-item")
+                                    a(class="nav-link active" href="#") Summary 
+                                li(class="nav-item")
+                                    a(class="nav-link" href="#") Lorem 
+                                li(class="nav-item")
+                                    a(class="nav-link" href="#") Lorem 
+                                li(class="nav-item")
+                                    a(class="nav-link" href="#") Lorem 
+                                
+                .info 
+                    .projectInfo 
+                        p.  
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Curabitur vel tortor purus. Donec in tincidunt dui.
+                            Sed congue ut purus vel molestie.
+                            Phasellus eu malesuada lacus. Integer 
+                            lacinia at lectus sit amet fermentum. Curabitur sit amet 
+                            laoreet ligula, at aliquet sem. Nulla facilisi. 
+                            Nunc ac condimentum enim.
+                    .share
+                        .projectShare
+                            button(class="btn")
+                                i(class="fa fa-facebook-square") Share this On facebook
+                            button(class="btn")
+                                i(class="fa fa-twitter-square") Share this On facebook
+
+
+        include footer 
+        script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous")
