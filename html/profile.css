@@ -135,6 +135,26 @@ h6{
     justify-content: center;
     align-items: center;
 }
+.imggoal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+.contentIntro{
+    padding: 0 30 30 30;
+    text-align: center;
+    margin-top: 20;
+    
+}
+.textgoal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
 
 .profile-pic {
     border-radius: 50%;
@@ -182,14 +202,33 @@ p,.project-title,.title{
   }
 
 
-.intro,.carbon,.goal{
+.intro,.carbon{
     display: flex;
     justify-content: center;
     margin: 30 0 30 0;
     align-items: center;
     /*height: 80vh;*/
 }
+.goal{
+    display: flex;
+    justify-content: center;
+}
+.q-a{
+    padding: 0 30 0 30;
+    margin: 10 0 10 0;
+    
+}
+.q-a .row{
+    padding: 20;
+    border: solid 2px;
+    margin: 10 0 10 0;
 
+}
+
+.see{
+    display: flex;
+    justify-content: flex-end;
+}
 
 
 @media screen and (max-width: 411px) {
@@ -244,6 +283,12 @@ p,.project-title,.title{
     .leftt{
         margin-left:0;
         margin-top : 10;
+    }
+    .goal{
+        display: block;
+    }
+    .contentIntro{
+        margin-top: 20;
     }
     
    
